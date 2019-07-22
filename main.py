@@ -22,6 +22,7 @@ vacuum_1_mode = basis(N,0)
 vacuum_2_mode = tensor(vacuum_1_mode, vacuum_1_mode)
 displacement_1_mode = displace(N, alpha = alpha)
 displacement_2_mode = tensor(displacement_1_mode, displacement_1_mode)
+
 #%%
 state = displacement_2_mode * vacuum_2_mode
 rho = ket2dm(state)
